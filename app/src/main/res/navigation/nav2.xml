@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav2"
+    app:startDestination="@id/butFragment2">
+
+    <fragment
+        android:id="@+id/butFragment2"
+        android:name="com.example.myapplication.actfragview.ButFragment2"
+        android:label="ButFragment2"
+		tools:layout="@layout/fragment_but2">
+		<action
+			android:id="@+id/action3"
+			app:destination="@id/shipActivity">
+		</action>
+	</fragment>
+    <activity
+        android:id="@+id/shipActivity"
+        android:name="com.example.myapplication.actfragview.ShipActivity"
+        android:label="activity_ship"
+        tools:layout="@layout/activity_ship">
+		<argument
+			android:name="argum"
+			app:argType="string"
+			android:defaultValue="0"/>
+	</activity>
+</navigation>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools">
+	
+	<data>
+		<import type="com.example.myapplication.R"/>
+		<variable
+		name="ship"
+		type="com.example.myapplication.model.Ship"/>
+	</data>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="@color/midblue"
+		tools:context=".actfragview.ShipActivity">
+
+		<TextView
+			android:id="@+id/Head"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@{ship.name}"
+			android:textAppearance="@style/HeaderText"
+			android:layout_marginTop="50dp"
+			android:layout_gravity="center"/>
+			
+		<ScrollView
+			android:layout_margin="30dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="@color/lightgrey"
+				tools:context=".actfragview.ShipActivity">
+
+				<ImageView
+					android:id="@+id/imageView"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:adjustViewBounds="true"/>
+
+				<TextView
+					android:id="@+id/type11"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="start"
+					android:layout_marginStart="10dp"
+					android:text="@string/par1"
+					android:textAppearance="@style/Char1" />
+
+				<TextView
+					android:id="@+id/type12"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:layout_marginEnd="10dp"
+					android:text="@{ship.type}"
+					android:textAppearance="@style/Char2"
+					/>
+
+				<TextView
+					android:id="@+id/type21"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="start"
+					android:layout_marginStart="10dp"
+					android:text="@string/par2"
+					android:textAppearance="@style/Char1" />
+
+				<TextView
+					android:id="@+id/type22"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:layout_marginEnd="10dp"
+					android:text="@{ship.year}"
+					android:textAppearance="@style/Char2" 
+					/>
+
+				<TextView
+					android:id="@+id/type31"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="start"
+					android:layout_marginStart="10dp"
+					android:text="@string/par3"
+					android:textAppearance="@style/Char1" />
+
+				<TextView
+					android:id="@+id/type32"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:layout_marginEnd="10dp"
+					android:text="@{ship.tons}"
+					android:textAppearance="@style/Char2" 
+					/>
+
+				<View
+					android:id="@+id/divider1"
+					android:layout_width="match_parent"
+					android:layout_height="3dp"
+					android:background="@color/darkgrey"
+					android:layout_margin="10dp"/>
+
+				<TextView
+					android:id="@+id/type41"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="start"
+					android:layout_marginStart="10dp"
+					android:text="@string/par4"
+					android:textAppearance="@style/Char1" />
+
+				<TextView
+					android:id="@+id/type42"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:layout_marginEnd="10dp"
+					android:text="@{ship.city}"
+					android:textAppearance="@style/Char2" 
+					/>
+
+				<TextView
+					android:id="@+id/type51"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="start"
+					android:layout_marginStart="10dp"
+					android:text="@string/par5"
+					android:textAppearance="@style/Char1" />
+
+				<TextView
+					android:id="@+id/type52"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:layout_marginEnd="10dp"
+					android:text="@{ship.country}"
+					android:textAppearance="@style/Char2" 
+					/>
+
+				<TextView
+					android:id="@+id/type61"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="start"
+					android:layout_marginStart="10dp"
+					android:text="@string/par6"
+					android:textAppearance="@style/Char1" />
+
+				<TextView
+					android:id="@+id/type62"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:layout_marginEnd="10dp"
+					android:text="@string/wait"
+					android:textAppearance="@style/Char2" />
+
+				<View
+					android:id="@+id/divider2"
+					android:layout_width="match_parent"
+					android:layout_height="3dp"
+					android:background="@color/darkgrey"
+					android:layout_margin="10dp"/>
+
+				<TextView
+					android:id="@+id/desc"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:layout_marginEnd="10dp"
+					android:ems="10"
+					android:gravity="start|top"
+					android:text="@{ship.desc}"
+					android:textAppearance="@style/Char2"
+					/>
+					
+			</LinearLayout>
+			
+		</ScrollView>
+
+	</LinearLayout>
+</layout>

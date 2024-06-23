@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ShipStory</string>
+    <string name="List">Корабли</string>
+    <string name="info">О программе</string>
+    <string name="ships">Корабли</string>
+    <string name="par1">Тип</string>
+    <string name="par2">Год постройки</string>
+    <string name="par3">Водоизмещение, т</string>
+    <string name="par4">Город</string>
+    <string name="par5">Страна</string>
+    <string name="par6">Расстояние, м</string>
+    <string name="wait">Подождите…</string>
+    <string name="app_info">Разработчики:\n Юшков Андрей Владимирович,\n Смолин Сергей Александрович\n\n Группа 151112, Прикладная математика и информатика\n\n Спасибо за использование приложения!</string>
+</resources>

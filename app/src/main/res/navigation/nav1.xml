@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav1"
+    app:startDestination="@id/butFragment1">
+    <activity
+        android:id="@+id/choiceActivity"
+        android:name="com.example.myapplication.actfragview.ChoiceActivity"
+        android:label="activity_choice"
+        tools:layout="@layout/activity_choice" />
+    <activity
+        android:id="@+id/infoActivity"
+        android:name="com.example.myapplication.actfragview.InfoActivity"
+        android:label="activity_info"
+        tools:layout="@layout/activity_info" />
+	<fragment
+		android:id="@+id/butFragment1"
+		android:name="com.example.myapplication.actfragview.ButFragment1"
+		android:label="fragment_but1"
+		tools:layout="@layout/fragment_but1">
+		<action
+			android:id="@+id/action1"
+			app:destination="@id/choiceActivity"
+		/>
+		<action
+			android:id="@+id/action2"
+			app:destination="@id/infoActivity"
+		/>
+	</fragment>
+</navigation>
